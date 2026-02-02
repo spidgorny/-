@@ -1,10 +1,10 @@
-# Privacy Policy for POI Nearby
+# Privacy Policy for What's Nearby
 
 **Last Updated: January 4, 2026**
 
 ## Introduction
 
-POI Nearby ("we", "our", or "the app") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.
+What's Nearby ("we", "our", or "the app") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.
 
 ## Information We Collect
 
@@ -104,7 +104,7 @@ The app requires the following permissions:
 
 ## Children's Privacy
 
-POI Nearby does not knowingly collect information from children under 13 years of age. The app does not require age verification as it does not collect personal information. Parents and guardians should supervise children's use of location-based services.
+What's Nearby does not knowingly collect information from children under 13 years of age. The app does not require age verification as it does not collect personal information. Parents and guardians should supervise children's use of location-based services.
 
 ## Data Retention
 
@@ -117,11 +117,6 @@ POI Nearby does not knowingly collect information from children under 13 years o
 
 We may update this Privacy Policy from time to time. Changes will be reflected by updating the "Last Updated" date at the top of this policy. We encourage you to review this policy periodically. Continued use of the app after changes constitutes acceptance of the updated policy.
 
-## Open Source
-
-POI Nearby is an open-source project. You can review the source code to verify our privacy practices at:
-[https://github.com/depidsvy/flutter-poi-nearby](https://github.com/depidsvy/flutter-poi-nearby)
-
 ## Data Processing Location
 
 - **Local Processing**: All data processing occurs on your device.
@@ -129,7 +124,7 @@ POI Nearby is an open-source project. You can review the source code to verify o
 
 ## International Users
 
-POI Nearby can be used worldwide. Location data is processed locally on your device and only shared with Wikipedia's API servers, which are operated by the Wikimedia Foundation globally.
+What's Nearby can be used worldwide. Location data is processed locally on your device and only shared with Wikipedia's API servers, which are operated by the Wikimedia Foundation globally.
 
 ## GDPR Compliance (EU Users)
 
@@ -158,7 +153,7 @@ If you are a California resident:
 ## Contact Information
 
 For questions or concerns about this Privacy Policy, please:
-- Open an issue on our GitHub repository: [https://github.com/depidsvy/flutter-poi-nearby/issues](https://github.com/depidsvy/flutter-poi-nearby/issues)
+- Open an issue on our GitHub repository: [https://github.com/spidgorny/-](https://github.com/spidgorny/-)
 - Email: [Your contact email if available]
 
 ## Summary
@@ -189,5 +184,5 @@ For questions or concerns about this Privacy Policy, please:
 
 ---
 
-**By using POI Nearby, you agree to this Privacy Policy.**
+**By using What's Nearby, you agree to this Privacy Policy.**
 

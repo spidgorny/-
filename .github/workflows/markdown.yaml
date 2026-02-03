@@ -21,49 +21,16 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
       
-      - name: Install markdown-it
-        run: npm install -g markdown-it markdown-it-cli
-      
-      - name: Convert Markdown to HTML
-        run: |
-          # Find all markdown files and convert them to HTML
-          find . -name "*.md" -type f | while read -r file; do
-            # Get the directory and filename without extension
-            dir=$(dirname "$file")
-            filename=$(basename "$file" .md)
-            
-            # Extract title from first heading or use filename
-            title=$(head -n 20 "$file" | grep -m 1 "^# " | sed 's/^# //' || echo "$filename")
-            
-            # Create HTML with proper header
-            cat > "${dir}/${filename}.html" << EOF
-  <!doctype html>
-  <html lang="en">
-  <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
-  <link rel="stylesheet" href="css/pico.min.css">
-  <title>Hello world!</title>
-  </head>
-  <body>
-  <main class="container">EOF
-            
-            # Convert markdown to HTML and append to file
-            markdown-it "$file" >> "${dir}/${filename}.html"
-            
-            # Close HTML tags
-            cat >> "${dir}/${filename}.html" << EOF
-  </main>
-</body>
-</html>
-EOF
+      - name: Install dependencies
+        working-directory: ./poi-nearby
+        run: npm install
 
-            echo "Converted: $file -> ${dir}/${filename}.html"
-          done
-                  
+      - name: Convert Markdown to HTML
+        working-directory: ./poi-nearby
+        run: npm run build
+
       - name:  Commit HTML files
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
